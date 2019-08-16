@@ -12,10 +12,8 @@
     object-fit: cover;
 }
 
-#camera--view, #camera--sensor, #camera--output {
-    
-    transform: rotateY(180deg);
-    filter: FlipH;
+#camera--view, #camera--sensor, #camera--output {    
+    transform: rotateY(180deg);   
 }
 
 #camera--trigger {
