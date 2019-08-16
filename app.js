@@ -1,6 +1,5 @@
 // Set constraints for the video stream
 var constraints = { video: { facingMode: "environment" }, audio: false };
-var myImage = document.getElementById('camera--output');
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
@@ -25,7 +24,7 @@ cameraTrigger.onclick = function () {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
-    Tesseract.recognize(myImage).then(function (result) {
+    Tesseract.recognize(cameraOutput.src).then(function (result) {
         console.log(result.text);
         alert(result.text);
     });
