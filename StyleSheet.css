@@ -12,10 +12,6 @@
     object-fit: cover;
 }
 
-#camera--view, #camera--sensor, #camera--output {    
-    
-}
-
 #camera--trigger {
     width: 200px;
     background-color: black;
