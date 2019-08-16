@@ -27,14 +27,9 @@ cameraTrigger.onclick = function () {
     cameraOutput.classList.add("taken");
     //var imagetaken = cameraSensor.getContext.drawImage(cameraView, 100, 100)
     Tesseract.recognize(myImage).then(function (result) {
-
         console.log(result.text);
-
         alert(result.text);
-
     });
-
-
 };
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
