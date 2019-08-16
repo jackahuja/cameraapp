@@ -13,7 +13,7 @@
 }
 
 #camera--view, #camera--sensor, #camera--output {
-    transform: scaleX(-1);
+    
     transform: rotateY(180deg);
     filter: FlipH;
 }
