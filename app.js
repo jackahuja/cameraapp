@@ -26,10 +26,10 @@ cameraTrigger.onclick = function () {
     cameraOutput.classList.add("taken");
     Tesseract.recognize(cameraOutput.src).then(function (result) {
         console.log(result.text);
-If (result.text = "data:,")
-alert("Please try again :)");
-else
-        alert(result.text);    
+        if (result.text = "data:,") 
+            alert("Please take again");
+        else
+            alert(result.text);    
     });
 };
 // Start the video stream when the window loads
