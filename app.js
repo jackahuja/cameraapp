@@ -26,8 +26,9 @@ cameraTrigger.onclick = function () {
     cameraOutput.classList.add("taken");
     Tesseract.recognize(cameraOutput.src).then(function (result) {
         console.log(result.text);
+        alert(result.text)
         if (result.text = "data:,") 
-            alert("please take again");
+            alert("Please take again");
         else
             alert(result.text)
     });
