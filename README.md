@@ -1,2 +1,2 @@
 # cameraapp
-captureVIN of a car POC
+Image to Text Recognition App
